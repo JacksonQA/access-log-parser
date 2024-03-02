@@ -1,14 +1,12 @@
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
-        System.out.println("Введите первое число:");
-       int number1 = new Scanner(System.in).nextInt();
-        System.out.println("Введите второе число:");
-       int number2 = new Scanner(System.in).nextInt();
-        System.out.println("Сумма двух чисел: " + (number1 + number2));
-        System.out.println("Разность двух чисел: " + (number1 - number2));
-        System.out.println("Произведение двух чисел: " + (number1 * number2));
-        System.out.println("Частное двух чисел: " + ((double)number1 / number2));
+        System.out.println("Результат: " + fraction(5.3));
+    }
+    public static double fraction(double x) {
+        double res = Math.round(x%1 * 1000.0) / 1000.0 ;
+        return res;
     }
 }
