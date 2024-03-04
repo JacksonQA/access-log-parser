@@ -8,7 +8,8 @@ public class main {
 //        System.out.println("Результат метода charToNum: " + charToNum('5'));
 //        System.out.println("Результат метода is2Digits: " + is2Digits(10));
 //        System.out.println("Результат метода isUpperCase: " + isUpperCase('a'));
-        System.out.println("Результат метода isInRange: " + isInRange(2, 15, 33));
+//        System.out.println("Результат метода isInRange: " + isInRange(2, 15, 33));
+        System.out.println("Результат метода isDivisor: " + isDivisor(15, 3));
     }
     public static double fraction(double x) {
         double res = Math.round(x%1 * 1000.0) / 1000.0 ;
@@ -35,5 +36,9 @@ public class main {
       boolean res1 = num <= a && num >= b;
       boolean res2 = num >= a && num <= b;
         return res1 | res2;
+    }
+    public static boolean isDivisor (int a, int b) {
+        boolean res = (a%b == 0) || (b%a == 0);
+        return res;
     }
 }
