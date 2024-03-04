@@ -9,7 +9,8 @@ public class main {
 //        System.out.println("Результат метода is2Digits: " + is2Digits(10));
 //        System.out.println("Результат метода isUpperCase: " + isUpperCase('a'));
 //        System.out.println("Результат метода isInRange: " + isInRange(2, 15, 33));
-        System.out.println("Результат метода isDivisor: " + isDivisor(15, 3));
+//        System.out.println("Результат метода isDivisor: " + isDivisor(15, 3));
+       System.out.println("Результат метода isEqual: " + isEqual(3, 4, 3));
     }
     public static double fraction(double x) {
         double res = Math.round(x%1 * 1000.0) / 1000.0 ;
@@ -39,6 +40,10 @@ public class main {
     }
     public static boolean isDivisor (int a, int b) {
         boolean res = (a%b == 0) || (b%a == 0);
+        return res;
+    }
+    public static boolean isEqual (int a, int b, int c){
+         boolean res = a == b && a == c;
         return res;
     }
 }
