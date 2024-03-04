@@ -1,6 +1,3 @@
-import java.math.BigDecimal;
-import java.util.Scanner;
-
 public class main {
     public static void main(String[] args) {
 //        System.out.println("Результат метода fraction: " + fraction(5.3));
@@ -10,7 +7,12 @@ public class main {
 //        System.out.println("Результат метода isUpperCase: " + isUpperCase('a'));
 //        System.out.println("Результат метода isInRange: " + isInRange(2, 15, 33));
 //        System.out.println("Результат метода isDivisor: " + isDivisor(15, 3));
-       System.out.println("Результат метода isEqual: " + isEqual(3, 4, 3));
+//       System.out.println("Результат метода isEqual: " + isEqual(3, 4, 3));
+
+        int a = lastNumSum(5, 11);
+        int b = lastNumSum(a, 123);
+        int c = lastNumSum(b, 14);
+        System.out.println("Результат метода lastNumSum: " + lastNumSum(c, 1));
     }
     public static double fraction(double x) {
         double res = Math.round(x%1 * 1000.0) / 1000.0 ;
@@ -45,5 +47,8 @@ public class main {
     public static boolean isEqual (int a, int b, int c){
          boolean res = a == b && a == c;
         return res;
+    }
+    public static int lastNumSum(int a, int b){
+        return (a%10)+(b%10);
     }
 }
