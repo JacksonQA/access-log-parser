@@ -7,7 +7,8 @@ public class main {
 //        System.out.println("Результат метода sumLastNums: " + sumLastNums(4568923));
 //        System.out.println("Результат метода charToNum: " + charToNum('5'));
 //        System.out.println("Результат метода is2Digits: " + is2Digits(10));
-        System.out.println("Результат метода isUpperCase: " + isUpperCase('a'));
+//        System.out.println("Результат метода isUpperCase: " + isUpperCase('a'));
+        System.out.println("Результат метода isInRange: " + isInRange(2, 15, 33));
     }
     public static double fraction(double x) {
         double res = Math.round(x%1 * 1000.0) / 1000.0 ;
@@ -29,5 +30,10 @@ public class main {
     public static boolean isUpperCase(char x){
         boolean res = x < 91;
         return res;
+    }
+    public static boolean isInRange(int a, int b, int num){
+      boolean res1 = num <= a && num >= b;
+      boolean res2 = num >= a && num <= b;
+        return res1 | res2;
     }
 }
