@@ -3,9 +3,10 @@ import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
-        System.out.println("Результат 1 метода: " + fraction(5.3));
-        System.out.println("Результат 2 метода: " + sumLastNums(4568923));
-        System.out.println("Результат 3 метода: " + charToNum('5'));
+        System.out.println("Результат метода fraction: " + fraction(5.3));
+        System.out.println("Результат метода sumLastNums: " + sumLastNums(4568923));
+        System.out.println("Результат метода charToNum: " + charToNum('5'));
+        System.out.println("Результат метода is2Digits: " + is2Digits(10));
     }
     public static double fraction(double x) {
         double res = Math.round(x%1 * 1000.0) / 1000.0 ;
@@ -18,6 +19,10 @@ public class main {
     }
     public static int charToNum(char x){
       int res = x - 48;
+        return res;
+    }
+    public static boolean is2Digits(int x){
+        boolean res = x > 9;
         return res;
     }
 }
