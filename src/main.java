@@ -8,11 +8,12 @@ public class main {
 //        System.out.println("Результат метода isInRange: " + isInRange(2, 15, 33));
 //        System.out.println("Результат метода isDivisor: " + isDivisor(15, 3));
 //       System.out.println("Результат метода isEqual: " + isEqual(3, 4, 3));
+        System.out.println("Результат метода isPositive: " + isPositive(-5));
 
-        int a = lastNumSum(5, 11);
-        int b = lastNumSum(a, 123);
-        int c = lastNumSum(b, 14);
-        System.out.println("Результат метода lastNumSum: " + lastNumSum(c, 1));
+//        int a = lastNumSum(5, 11);
+//        int b = lastNumSum(a, 123);
+//        int c = lastNumSum(b, 14);
+//        System.out.println("Результат метода lastNumSum: " + lastNumSum(5, 11));
     }
     public static double fraction(double x) {
         double res = Math.round(x%1 * 1000.0) / 1000.0 ;
@@ -50,5 +51,8 @@ public class main {
     }
     public static int lastNumSum(int a, int b){
         return (a%10)+(b%10);
+    }
+    public static boolean isPositive(int x){
+        return x > 0;
     }
 }
