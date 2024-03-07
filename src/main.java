@@ -7,8 +7,9 @@ public class main {
 //        System.out.println("Результат метода isUpperCase: " + isUpperCase('a'));
 //        System.out.println("Результат метода isInRange: " + isInRange(2, 15, 33));
 //        System.out.println("Результат метода isDivisor: " + isDivisor(15, 3));
-//       System.out.println("Результат метода isEqual: " + isEqual(3, 4, 3));
-        System.out.println("Результат метода isPositive: " + isPositive(-5));
+//        System.out.println("Результат метода isEqual: " + isEqual(3, 4, 3));
+//        System.out.println("Результат метода isPositive: " + isPositive(-5));
+        System.out.println("Результат метода abs: " + Conditions.abs(-5));
 
 //        int a = lastNumSum(5, 11);
 //        int b = lastNumSum(a, 123);
