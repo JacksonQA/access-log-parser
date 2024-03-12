@@ -7,4 +7,7 @@ public class Conditions {
         if (y == 0) return 0;
         return (x / y);
         }
+    public static int max(int x, int y){
+       return x > y?x:y;
+    }
     }

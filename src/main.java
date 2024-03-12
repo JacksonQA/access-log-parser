@@ -10,7 +10,7 @@ public class main {
 //        System.out.println("Результат метода isEqual: " + isEqual(3, 4, 3));
 //        System.out.println("Результат метода isPositive: " + isPositive(-5));
 //        System.out.println("Результат метода abs: " + Conditions.abs(-5));
-        System.out.println("Результат метода safeDiv: " + Conditions.safeDiv(6, 3));
+        System.out.println("Результат метода safeDiv: " + Conditions.max(3, 3));
 
 //        int a = lastNumSum(5, 11);
 //        int b = lastNumSum(a, 123);
