@@ -8,6 +8,21 @@ public class Conditions {
         return (x / y);
         }
     public static int max(int x, int y){
-       return x > y?x:y;
+       return (x > y)?x: y;
     }
+//    public static String makeDecision(int x, int y){
+//        if (x > y) return
+//        else if (x < y) return System.out.println(x + '<' + y);
+//        else if (x == y) return System.out.println(x + "==" + y);
+//    }
+    public static String makeDecision(int x, int y){
+        String result = "";
+        if (x > y) {
+           return  result =x + " > " + y;
+        } else if (x < y) {
+           return result =x + " < ";
+        } else {
+           return result = x + " == " + y;
+        }
     }
+}
