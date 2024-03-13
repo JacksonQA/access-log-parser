@@ -1,6 +1,6 @@
 public class main {
     public static void main(String[] args) {
-        System.out.println(Conditions.day(7));
+    Conditions.printDays("суббота");
     }
     public static double fraction(double x) {
         double res = Math.round(x%1 * 1000.0) / 1000.0 ;
