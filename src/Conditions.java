@@ -32,4 +32,7 @@ public class Conditions {
    if  (x + y <= 19 && x + y >= 10) return 20;
    return x + y;
         }
+    public static boolean is35(int x){
+        return (x % 3 == 0 || x % 5 == 0) && x % 15 != 0;
+    }
     }
