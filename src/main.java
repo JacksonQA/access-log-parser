@@ -1,6 +1,6 @@
 public class main {
     public static void main(String[] args) {
-        System.out.println(Conditions.sum3(2,1,1));
+        System.out.println(Conditions.sum2(9,1));
     }
     public static double fraction(double x) {
         double res = Math.round(x%1 * 1000.0) / 1000.0 ;

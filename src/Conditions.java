@@ -10,11 +10,6 @@ public class Conditions {
     public static int max(int x, int y){
        return (x > y)?x: y;
     }
-//    public static String makeDecision(int x, int y){
-//        if (x > y) return
-//        else if (x < y) return System.out.println(x + '<' + y);
-//        else if (x == y) return System.out.println(x + "==" + y);
-//    }
     public static String makeDecision(int x, int y){
         String result = "";
         if (x > y) {
@@ -33,5 +28,8 @@ public class Conditions {
     public static boolean sum3(int x, int y, int z){
         return (x + y == z)  || (x + z == y) || (z + y == x);
     }
-
-}
+    public static int sum2(int x, int y){
+   if  (x + y <= 19 && x + y >= 10) return 20;
+   return x + y;
+        }
+    }
