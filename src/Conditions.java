@@ -35,4 +35,19 @@ public class Conditions {
     public static boolean is35(int x){
         return (x % 3 == 0 || x % 5 == 0) && x % 15 != 0;
     }
+    public static boolean magic6(int x, int y){
+        if (x + y == 6 || x - y == 6 || y - x == 6 || x == 6 || y == 6) return true;
+        return false;
+    }
+    public static String age(int x){
+        if (x % 10 == 1 && x != 11)
+           return (x + " год");
+
+            else if ((x % 10 == 2 || x % 10 == 3 || x % 10 == 4) && (x != 12) && (x != 13) && (x != 14))
+        return (x + " года");
+        else return (x + " лет");
+
+
+
+    }
     }
