@@ -30,4 +30,8 @@ public class Conditions {
         else if (y > x && y >= z) return y;
         else return z;
     }
+    public static boolean sum3(int x, int y, int z){
+        return (x + y == z)  || (x + z == y) || (z + y == x);
+    }
+
 }
