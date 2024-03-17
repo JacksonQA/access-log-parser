@@ -21,5 +21,12 @@ public class PracticeLoops {
         }
         return q;
     }
+    public static int pow(int x, int y){
+        int q = 1;
+        for (int i = 0; i < y; i++) {
+            q *= x;
+        }
+        return q;
+    }
 
 }
