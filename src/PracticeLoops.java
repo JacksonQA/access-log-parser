@@ -55,4 +55,12 @@ public class PracticeLoops {
             }
         }
     }
+    public static void leftTriangle(int x){
+        for (int i = 0; i <= x; i++){
+            System.out.println("");
+            for (int j = 0; j < i; j++){
+                System.out.print("*");
+            }
+        }
+    }
 }
