@@ -36,5 +36,16 @@ public class PracticeLoops {
         }
         return q;
     }
+    public static boolean equalNum(int x){
+        int y = x % 10;
+            while (x >= 10){
+            x /= 10;
+            int z = x % 10;
+            if (z != y) return false;
+            else continue;
+        }
+        return true;
+    }
+
 
 }
