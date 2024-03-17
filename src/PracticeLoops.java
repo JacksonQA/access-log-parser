@@ -14,5 +14,12 @@ public class PracticeLoops {
         }
         return q;
     }
+    public static String chet(int x){
+        String q = "";
+        for (int i = 0; i <= x; i+= 2) {
+            q += i +" ";
+        }
+        return q;
+    }
 
 }
