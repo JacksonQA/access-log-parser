@@ -7,5 +7,12 @@ public class PracticeLoops {
         }
         return q;
     }
+    public static String reverseListNums(int x){
+        String q = "";
+        for (int i = x; i >= 0; i--) {
+            q += i +" ";
+        }
+        return q;
+    }
 
 }
