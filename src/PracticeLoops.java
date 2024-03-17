@@ -28,5 +28,12 @@ public class PracticeLoops {
         }
         return q;
     }
-
+    public static int numLen(long x){
+        int q = 0;
+        for (int i = 0; x > 0; i++) {
+            x /= 10;
+            q += 1;
+        }
+        return q;
+    }
 }
