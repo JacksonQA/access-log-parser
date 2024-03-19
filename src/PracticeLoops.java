@@ -82,4 +82,23 @@ public class PracticeLoops {
             System.out.println("");
             }
         }
+    public static void guessGame() {
+        int randomNum = 3;
+        int x = -1;
+        int attempts = 0;
+        while (x != randomNum){
+            attempts += 1;
+            java.util.Scanner sc = new java.util.Scanner(System.in);
+            System.out.println("What number am I thinking (0 to 9)? :");
+             x = sc.nextInt();
+            if (x != randomNum) {
+                System.out.println("No, try again");
+            } else {
+                System.out.println("Yes, it`s " + randomNum);
+                System.out.println("Attempts: "+ attempts);
+                break;
+            }
+        }
     }
+}
+
