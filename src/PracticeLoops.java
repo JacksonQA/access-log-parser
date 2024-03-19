@@ -1,34 +1,38 @@
-public class PracticeLoops {
 
-    public static String listNums(int x){
+public class PracticeLoops {
+    public static String listNums(int x) {
         String q = "";
         for (int i = 0; i <= x; i++) {
-            q += i +" ";
+            q += i + " ";
         }
         return q;
     }
-    public static String reverseListNums(int x){
+
+    public static String reverseListNums(int x) {
         String q = "";
         for (int i = x; i >= 0; i--) {
-            q += i +" ";
+            q += i + " ";
         }
         return q;
     }
-    public static String chet(int x){
+
+    public static String chet(int x) {
         String q = "";
-        for (int i = 0; i <= x; i+= 2) {
-            q += i +" ";
+        for (int i = 0; i <= x; i += 2) {
+            q += i + " ";
         }
         return q;
     }
-    public static int pow(int x, int y){
+
+    public static int pow(int x, int y) {
         int q = 1;
         for (int i = 0; i < y; i++) {
             q *= x;
         }
         return q;
     }
-    public static int numLen(long x){
+
+    public static int numLen(long x) {
         int q = 0;
         for (int i = 0; x > 0; i++) {
             x /= 10;
@@ -36,9 +40,10 @@ public class PracticeLoops {
         }
         return q;
     }
-    public static boolean equalNum(int x){
+
+    public static boolean equalNum(int x) {
         int y = x % 10;
-            while (x >= 10){
+        while (x >= 10) {
             x /= 10;
             int z = x % 10;
             if (z != y) return false;
@@ -46,21 +51,35 @@ public class PracticeLoops {
         }
         return true;
     }
-    public static void square(int x){
-        for (int i = 0; i < x; i++){
+
+    public static void square(int x) {
+        for (int i = 0; i < x; i++) {
             System.out.println("");
-            for (int j = 0; j < x; j++){
+            for (int j = 0; j < x; j++) {
                 System.out.print("*");
 
             }
         }
     }
-    public static void leftTriangle(int x){
-        for (int i = 0; i <= x; i++){
+
+    public static void leftTriangle(int x) {
+        for (int i = 0; i <= x; i++) {
             System.out.println("");
-            for (int j = 0; j < i; j++){
+            for (int j = 0; j < i; j++) {
                 System.out.print("*");
             }
         }
     }
-}
+
+    public static void rightTriangle(int x) {
+        for (int i = 0; i < x; i++) {
+                for (int j = x; j >= 0; j--) {
+                if ( j > i){
+                    System.out.print(" ");
+                }
+                else System.out.print("*");
+                }
+            System.out.println("");
+            }
+        }
+    }
